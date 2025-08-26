@@ -1,0 +1,27 @@
+name: HomesSystem
+main: com.github.saintedlittle.HomesSystem
+version: "1.0.0-RELEASE"
+author: [saintedlittle]
+api-version: "1.21"
+description: Ultra-fast, localization-ready homes plugin (Kotlin + SQLite + Hikari)
+commands:
+  sethome:
+    description: Set a home at your current location
+    usage: "/sethome [name]"
+    permission: homessystem.command
+  home:
+    description: Teleport to a home (with delay)
+    usage: "/home <name>"
+    permission: homessystem.command
+  delhome:
+    description: Delete a home
+    usage: "/delhome <name>"
+    permission: homessystem.command
+
+permissions:
+  homessystem.command:
+    default: true
+  homessystem.bypass.delay:
+    default: op
+  homessystem.bypass.limit:
+    default: op

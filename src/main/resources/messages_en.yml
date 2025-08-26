@@ -1,0 +1,23 @@
+prefix: "&8[&aHomes&8]&r "
+error:
+  players_only: "&cThis command can only be used by players."
+  invalid_name: "Invalid home name. Use a-z, 0-9, '_' or '-' (1–16 chars)."
+  not_found: "Home &e{NAME}&r not found."
+  max_reached: "You reached the limit: &e{LIMIT}&r homes."
+  already_teleporting: "Teleport already in progress..."
+  usage_sethome: "Usage: /sethome [name]"
+  usage_home: "Usage: /home <name>"
+  usage_delhome: "Usage: /delhome <name>"
+set:
+  created: "Set home &e{NAME}&r. (&7{COUNT}/{LIMIT}&r)"
+  updated: "Updated home &e{NAME}&r. (&7{COUNT}/{LIMIT}&r)"
+teleport:
+  scheduled: "Teleporting to &e{NAME}&r in &e{SECONDS}&r seconds. Don't move!"
+  cancelled_moved: "Teleport cancelled: you moved."
+  cancelled_damaged: "Teleport cancelled: you took damage."
+  success: "Teleported to &e{NAME}&r."
+  cancelled:
+    move: "&cTeleport cancelled: you moved."
+    damage: "&cTeleport cancelled: you took damage."
+delete:
+  ok: "Deleted home &e{NAME}&r."

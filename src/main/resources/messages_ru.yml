@@ -1,0 +1,24 @@
+prefix: "&8[&aДом&8]&r "
+error:
+  players_only: "Эту команду может выполнять только игрок."
+  invalid_name: "Неверное имя дома. Разрешены a-z, 0-9, '_' или '-' (1–16 символов)."
+  not_found: "Дом &e{NAME}&r не найден."
+  max_reached: "Достигнут лимит домов: &e{LIMIT}&r."
+  already_teleporting: "Телепортация уже выполняется..."
+  usage_sethome: "Использование: /sethome [имя]"
+  usage_home: "Использование: /home <имя>"
+  usage_delhome: "Использование: /delhome <имя>"
+set:
+  created: "Дом &e{NAME}&r установлен. (&7{COUNT}/{LIMIT}&r)"
+  updated: "Дом &e{NAME}&r обновлён. (&7{COUNT}/{LIMIT}&r)"
+teleport:
+  scheduled: "Телепортация в &e{NAME}&r через &e{SECONDS}&r сек. Не двигайтесь!"
+  cancelled_moved: "Телепортация отменена: вы сдвинулись."
+  cancelled_damaged: "Телепортация отменена: вы получили урон."
+  success: "Телепортирован в &e{NAME}&r."
+  cancelled:
+    move: "&cТелепортация отменена: вы двинулись."
+    damage: "&cТелепортация отменена: вы получили урон."
+
+delete:
+  ok: "Дом &e{NAME}&r удалён."

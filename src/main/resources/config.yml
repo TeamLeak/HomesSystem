@@ -1,0 +1,45 @@
+# Notes:
+# - Permission format for max homes: homessystem.lvl{number}.homes (e.g., homessystem.lvl5.homes)
+# - Highest {number} wins. If none found, default_max_homes applies.
+
+
+locale: en
+
+
+limits:
+  default_max_homes: 1
+  # If true, players with homessystem.bypass.limit ignore limits
+  allow_bypass_via_permission: true
+
+
+teleport:
+  delay_seconds: 5
+  cancel_on_move: true
+  move_tolerance: 0.12 # blocks
+  cancel_on_damage: true
+
+
+names:
+  default_name: "home"
+  min_length: 1
+  max_length: 16
+  # Allowed: lowercase letters, digits, underscore, hyphen
+  pattern: "^[a-z0-9_\-]+$"
+  force_lowercase: true
+
+
+sqlite:
+  file: homes.db
+  pragmas:
+    journal_mode: WAL
+    synchronous: NORMAL
+    busy_timeout_ms: 5000
+    cache_size_kb: -8192 # negative means KiB pages; speeds reads
+
+
+messages:
+  prefix: "&8[&aHomes&8]&r "
+
+
+# Debug logging to console
+debug: false
