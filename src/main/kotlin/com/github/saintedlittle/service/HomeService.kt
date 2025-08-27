@@ -16,6 +16,7 @@ class HomeService(
     private val cfg: PluginConfig,
 ) {
     private val limitRegex = Regex("^homessystem\\.lvl(\\d+)\\.homes$", RegexOption.IGNORE_CASE)
+    fun listHomesOf(owner: UUID): List<Home> = repo.list(owner)
 
 
     fun normalizedName(input: String?): String? {

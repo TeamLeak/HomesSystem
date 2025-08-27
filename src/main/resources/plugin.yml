@@ -17,6 +17,9 @@ commands:
     description: Delete a home
     usage: "/delhome <name>"
     permission: homessystem.command
+  homes:
+    description: List your homes or homes of another player
+    usage: "/homes [player]"
 
 permissions:
   homessystem.command:
@@ -24,4 +27,7 @@ permissions:
   homessystem.bypass.delay:
     default: op
   homessystem.bypass.limit:
+    default: op
+  homessystem.homes.others:
+    description: Allows listing homes of other players via /homes <player>
     default: op
